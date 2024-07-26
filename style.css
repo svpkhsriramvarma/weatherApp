@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    color: #EE4E4E;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F6EEC9;
+}
+
+.container {
+    background-color: #FFFFFF;
+    width: 90%;
+    max-width: 600px;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container img {
+    margin-top: 0.8rem;
+    max-width: 100%;
+}
+
+.search {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.search input {
+    height: 3rem;
+    width: 80%;
+    border: none;
+    border-radius: 3rem;
+    padding-left: 1rem;
+    font-size: 0.9rem;
+    border:1.5px solid rgba(245, 88, 88,0.5);
+}
+
+.load {
+    height:30px;
+    width:30px;
+    border-top:1.5px solid #EE4E4E;
+    border-radius:50%;
+    margin-top:0.5rem;
+    margin-right:0.6rem;
+    animation: mymove 2s infinite;
+    display:none;
+}
+
+@keyframes mymove {
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+.search .second {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 1rem;
+    border:1px solid #EE4E4E;
+    background-color: #fff;
+    border-radius: 3rem;
+    cursor: pointer;
+    margin-top:0.3rem;
+}
+
+.search div:active {
+    opacity:0.5;
+}
+
+.error {
+    padding-right:3rem;
+    display:none;
+}
+
+.weather {
+    display:none;
+}
+
+.container h1 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.container h1 span {
+    font-size: 1.5rem;
+}
+
+.container h2 {
+    font-weight: 500;
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.menu {
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.menu > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left:1rem
+}
+
+.menu div img {
+    height: 2rem;
+    width: 2rem;
+    margin-bottom:0.7rem;
+}
+
+
+/* Media Queries */
+@media (min-width: 600px) {
+    .container {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 40%;
+    }
+
+    .container h1 {
+        font-size: 4rem;
+    }
+
+    .container h1 span {
+        font-size: 2rem;
+    }
+
+    .container h2 {
+        font-size: 2rem;
+    }
+
+    .search input {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 35%;
+    }
+}
